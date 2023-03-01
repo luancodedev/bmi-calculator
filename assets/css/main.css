@@ -1,0 +1,69 @@
+:root {
+  --color-pastelRed: #ff6a6a;
+  --color-gunmetal: #292e36;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  color: var(--color-pastelRed);
+  padding: 50px;
+  background: var(--color-gunmetal);
+}
+
+.inserir-altura-peso {
+  padding: 50px;
+}
+
+.inserir-altura-peso:not(:last-of-type) {
+  border-bottom: 2px solid rgba(41, 46, 54, 0.15);
+}
+
+.inserir-altura-peso h2 {
+  margin-bottom: 20px;
+}
+
+.inserir-altura-peso input[type='number'] {
+  width: 300px;
+  padding: 15px 25px;
+  border: 2px solid var(--color-gunmetal);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.inserir-altura-peso input[type='number']::placeholder {
+  font-weight: 700;
+}
+
+.inserir-altura-peso span {
+  font-weight: 700;
+}
+
+.botoes {
+  padding: 25px 50px;
+  border-bottom: 2px solid rgba(41, 46, 54, 0.15);
+}
+
+.botoes button {
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--color-gunmetal);
+  color: var(--color-pastelRed);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#resultado {
+  font-size: 20px;
+  text-transform: lowercase;
+}
